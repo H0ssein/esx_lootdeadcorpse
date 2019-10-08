@@ -7,6 +7,11 @@ it allows specific jobs to loot dead corpse, of course with a cute animation by 
 ### Prerequisites
 
 only works with ESX
+## Demo
+[![Watch the video](https://cdn.discordapp.com/attachments/584460034541617172/631138375189004288/unknown.png)](https://cdn.discordapp.com/attachments/587184003291938817/631087554665381898/IRforCe_Loot_The_Dead_Corpse.mp4
+)
+
+
 
 ## Installing
 
