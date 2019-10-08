@@ -48,7 +48,7 @@ start irforce_lootdeadcorpse
 ```
 ### forum link
 [[Release] [ESX] IRforCe Loot The Dead Corpse](https://forum.fivem.net/t/release-esx-irforce-loot-the-dead-corpse/826653)
-## Enjor it🤩
+## Enjoy it🤩
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/H0ssein/irforce_lootdeadcorpse/blob/master/CONTRIBUTING.md) for more information.
