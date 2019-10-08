@@ -32,6 +32,16 @@ for example:
 ```
 if IsControlJustReleased(0, 38) and ( ESX.PlayerData["job"]["name"] == "fbi" or ESX.PlayerData["job"]["name"] == "police" ) then
 ```
+or if you like to allow all players to loot, just remove the code below
+```
+and ( ESX.PlayerData["job"]["name"] == "jobname-here" or ESX.PlayerData["job"]["name"] == "jobname-here" )
+```
+and it will looks like this:
+```
+if IsControlJustReleased(0, 38) then
+```
+also you can change config file to your liking
+
 and for the final step put the line below in your server.cfg file
 ```
 start irforce_lootdeadcorpse
