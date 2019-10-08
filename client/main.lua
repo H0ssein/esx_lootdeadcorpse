@@ -26,7 +26,7 @@ AddEventHandler('esx:setJob', function(response)
 end)
 		while true do
 			Citizen.Wait(20)
-			if IsControlJustReleased(0, 38) and ( ESX.PlayerData["job"]["name"] == "vagos" or ESX.PlayerData["job"]["name"] == "grove" or ESX.PlayerData["job"]["name"] == "gang" or ESX.PlayerData["job"]["name"] == "dismay" or ESX.PlayerData["job"]["name"] == "cartel" or ESX.PlayerData["job"]["name"] == "bishops" or ESX.PlayerData["job"]["name"] == "biker" or ESX.PlayerData["job"]["name"] == "ballas" ) then
+			if IsControlJustReleased(0, 38) and ( ESX.PlayerData["job"]["name"] == "jobname-here" or ESX.PlayerData["job"]["name"] == "jobname-here" ) then
 				local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 				if IsPlayerDead(closestPlayer) then 
 					if closestPlayer ~= -1 and closestDistance <= 3.0 then
