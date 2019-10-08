@@ -31,6 +31,8 @@ and for the final step put the line below in your server.cfg file
 ```
 start irforce_lootdeadcorpse
 ```
+### forum link
+[[Release] [ESX] IRforCe Loot The Dead Corpse](https://forum.fivem.net/t/release-esx-irforce-loot-the-dead-corpse/826653)
 ## Enjor it🤩
 ## Contributing
 
