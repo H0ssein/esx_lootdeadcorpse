@@ -23,7 +23,7 @@ AddEventHandler('esx:setJob', function(job)
 end)
 		while true do
 			Citizen.Wait(20)
-			if PlayerData.job and ( PlayerData.job.name == "jobname-here" or PlayerData.job.name == "jobname-here" then
+			if PlayerData.job and ( PlayerData.job.name == "jobname-here" or PlayerData.job.name == "jobname-here" then -- comment this line if you want to allow all player to loot
 				if IsControlJustReleased(0, 38) then		
 				local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
 					if IsPlayerDead(closestPlayer) then 
@@ -32,7 +32,7 @@ end)
 						end
 					end
 				end
-			end
+			end -- comment this line if you want to allow all player to loot
 		end
 	
 end)
