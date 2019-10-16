@@ -15,30 +15,27 @@ Citizen.CreateThread(function()
 
 	PlayerData = ESX.GetPlayerData()
 end)
-
-
     
 Citizen.CreateThread(function()
-
 RegisterNetEvent('esx:setJob')
-AddEventHandler('esx:setJob', function(response)
-    ESX.PlayerData["job"] = response
+AddEventHandler('esx:setJob', function(job)
+	PlayerData.job = job
 end)
 		while true do
 			Citizen.Wait(20)
-			if IsControlJustReleased(0, 38) and ( ESX.PlayerData["job"]["name"] == "jobname-here" or ESX.PlayerData["job"]["name"] == "jobname-here" ) then
+			if PlayerData.job and ( PlayerData.job.name == "jobname-here" or PlayerData.job.name == "jobname-here" then
+				if IsControlJustReleased(0, 38) then		
 				local closestPlayer, closestDistance = ESX.Game.GetClosestPlayer()
-				if IsPlayerDead(closestPlayer) then 
-					if closestPlayer ~= -1 and closestDistance <= 3.0 then
+					if IsPlayerDead(closestPlayer) then 
+						if closestPlayer ~= -1 and closestDistance <= 5.0 then
 						OpenBodySearchMenu(closestPlayer)
+						end
 					end
 				end
 			end
 		end
 	
 end)
-
-
 
 	function OpenBodySearchMenu(target, target_id)
 	loadAnimDict('amb@medic@standing@kneel@base')
@@ -73,9 +70,7 @@ end)
               type           = 'item_account',
               amount         = blackMoney,
             })
-        
 
-        
             table.insert(elements, {label = '--- ' .. _U('inventory') .. ' ---', value = nil})
 
             for i=1, #data.inventory, 1 do
@@ -88,9 +83,7 @@ end)
                 })
               end
             end
-        
 
-        
             table.insert(elements, {label = '=== ' .. _U('gun_label') .. ' ===', value = nil})
 
             for i=1, #data.weapons, 1 do
@@ -182,7 +175,6 @@ end
 function loadAnimDict(dict)
 	  while (not HasAnimDictLoaded(dict)) do
 		  RequestAnimDict(dict)
-		  
 		  Citizen.Wait(1)
 	  end
-  end
+end
