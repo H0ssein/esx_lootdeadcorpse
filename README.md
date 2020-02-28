@@ -1,4 +1,4 @@
-# esx_irforce_lootdeadcorpse
+# esx_lootdeadcorpse
 
 this is my very first script
 
@@ -19,11 +19,11 @@ irforce_lootdeadcorpsee-master
 ```
 to
 ```
-irforce_lootdeadcorpse
+esx_lootdeadcorpse
 ```
 then goto to the address below and change the jobs name of your liking
 ```
-irforce_lootdeadcorpse/client/main.lua:29
+esx_lootdeadcorpse/client/main.lua:29
 ```
 just replace the "jobname-here" with the job name you like
 for example:
